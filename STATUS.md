@@ -2,7 +2,7 @@
 
 **Manuscript**: For Whom Does Game-Based Learning Training Work? An RCT of a Scaffolded Digital Simulation for B2B Sales Training
 **Author**: Yoshua Yanottama
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-29
 **Current stage**: Post peer review — Major Revision
 
 ---
@@ -11,8 +11,8 @@
 
 ```
 gbl-thesis/
-├── main.tex            ← Working LaTeX manuscript (compiles clean, 72 pages)
-├── main.pdf            ← Latest compiled output
+├── main.tex            ← Working LaTeX manuscript
+├── main.pdf            ← Latest compiled output (72 pages after current revision pass)
 ├── figures/            ← Drop figure files here (currently placeholders)
 ├── data/
 │   └── participants_log_final_63.csv   ← N=63 completer dataset
@@ -31,10 +31,9 @@ gbl-thesis/
 ## Compile
 
 ```bash
-pdflatex main.tex && pdflatex main.tex && pdflatex main.tex
+pdflatex -interaction=nonstopmode -halt-on-error main.tex
 ```
-Three passes resolve all cross-references. No BibTeX used (citations inline).
-Compiles clean with no undefined references as of 2026-05-05.
+Current manuscript compiles successfully on a lean TeX Live install after adding an `enumitem` fallback in the preamble. A second pass settles cross-references. Remaining build output is limited to minor overfull-box warnings.
 
 ---
 
@@ -55,14 +54,14 @@ Compiles clean with no undefined references as of 2026-05-05.
 
 | # | Issue | Source | Status |
 |---|---|---|---|
-| R1 | Lead with pre-registered continuous moderation; cluster analysis as exploratory secondary | R1-W2, DA-MAJOR-3 | ⬜ pending |
-| R2 | Drop CL germane subscale claim (α=.31); use total CL + design logic + behavioral log | R1-W1 (Critical) | ⬜ pending |
-| R3 | Reframe ROC as provisional; remove "deployable screening criterion" language | DA-CRITICAL-1, R1-W5 | ⬜ pending |
+| R1 | Lead with pre-registered continuous moderation; cluster analysis as exploratory secondary | R1-W2, DA-MAJOR-3 | ✅ done |
+| R2 | Drop CL germane subscale claim (α=.31); use total CL + design logic + behavioral log | R1-W1 (Critical) | ✅ done |
+| R3 | Reframe ROC as provisional; remove "deployable screening criterion" language | DA-CRITICAL-1, R1-W5 | ✅ done |
 | R4 | Characterise non-completing novice exit timing using behavioral log | DA-CRITICAL-2 | ⬜ pending |
-| R5 | Add LM-GM alignment table (supplementary) mapping mechanics → learning mechanic → Bloom level | R2-W1 | ⬜ pending |
+| R5 | Add LM-GM alignment table (supplementary) mapping mechanics → learning mechanic → Bloom level | R2-W1 | ✅ done |
 | R6 | Add ANCOVA homogeneity of regression slopes test results | R1-W4 | ⬜ pending |
-| R7 | Recalibrate practical recommendations to "adaptive selling training in professional development contexts" not "B2B sales training broadly" | R3-W1 | ⬜ pending |
-| R8 | Consistently use "self-reported adaptive selling beliefs" not "adaptive selling competency" | R3-W2 | ⬜ pending |
+| R7 | Recalibrate practical recommendations to "adaptive selling training in professional development contexts" not "B2B sales training broadly" | R3-W1 | ✅ done |
+| R8 | Consistently use "self-reported adaptive selling beliefs" not "adaptive selling competency" | R3-W2 | 🟨 partial |
 
 ---
 
@@ -73,13 +72,13 @@ Compiles clean with no undefined references as of 2026-05-05.
 | S1 | Report silhouette values for k=2, k=3, k=4; justify k=3 selection | R1-W3 | ⬜ pending |
 | S2 | Add bootstrapped CIs on cluster-conditional d values (esp. C1 d=−1.88) | R1-W3 | ⬜ pending |
 | S3 | Add AUC 95% CI on ROC result | R1-W5 | ⬜ pending |
-| S4 | Engage Mayer's CTML (coherence/signalling principles) in §2/§3 | R2-W2 | ⬜ pending |
-| S5 | Cite Leppink et al. (2013) in measures section; explain why used instead | R2-W2 | ⬜ pending |
-| S6 | Cite DDA literature (Serrano-Laguna et al., 2012; Zohaib, 2018) for dynamic difficulty recommendation | R2-W2 | ⬜ pending |
-| S7 | Connect BPD concept to Gagné (1985) prerequisite conditions / Merrill (2002) First Principles | R2-W4 | ⬜ pending |
-| S8 | Elevate format–measurement alignment concern from Limitation 6 to more prominent Discussion placement | R3-W3, DA-MAJOR-2 | ⬜ pending |
-| S9 | Describe control condition content more fully (§4.2 or supplementary) | R2-W3, R3-W4 | ⬜ pending |
-| S10 | Add paragraph in §6.7 addressing organisational barriers to expertise-routing implementation | R3 Discussion comment | ⬜ pending |
+| S4 | Engage Mayer's CTML (coherence/signalling principles) in §2/§3 | R2-W2 | 🟨 partial |
+| S5 | Cite Leppink et al. (2013) in measures section; explain why used instead | R2-W2 | ✅ done |
+| S6 | Cite DDA literature (Serrano-Laguna et al., 2012; Zohaib, 2018) for dynamic difficulty recommendation | R2-W2 | ✅ done |
+| S7 | Connect BPD concept to Gagné (1985) prerequisite conditions / Merrill (2002) First Principles | R2-W4 | ✅ done |
+| S8 | Elevate format–measurement alignment concern from Limitation 6 to more prominent Discussion placement | R3-W3, DA-MAJOR-2 | ✅ done |
+| S9 | Describe control condition content more fully (§4.2 or supplementary) | R2-W3, R3-W4 | ✅ done |
+| S10 | Add paragraph in §6.7 addressing organisational barriers to expertise-routing implementation | R3 Discussion comment | ✅ done |
 
 ---
 
@@ -87,14 +86,15 @@ Compiles clean with no undefined references as of 2026-05-05.
 
 These are unresolved before revision work can begin on the relevant sections.
 
-### 1. Framework naming (supervisor input)
-Supervisor suggested proposing a **defined framework** rather than just extending Arnab et al. (2015). Working candidates:
-- MTC (Mechanics Transparency Coefficient) + BPD (Bloom-level Prerequisite Dependency) as named criteria
-- Needs a framework name and three explicit testable criteria
-- **Decision needed**: Name the framework, operationalise MTC/BPD
+### 1. Framework naming
+Current manuscript direction is now the **Cognitive Load Budget Framework**, anchored to Plass et al.'s cognitive foundation rather than an Octalysis-style three-axis proposal.
+- Raw budget = mechanics inventory to decode
+- Schema offset = prior knowledge reducing effective burden
+- Effective load = learner-specific resulting burden
+- **Status**: integrated conceptually in `main.tex`; still needs explicit future-test operationalisation
 
 ### 2. Dropout/attrition handling (supervisor input)
-Supervisor suggested removing dropouts from the analysis. Recommended alternative: keep attrition statistic (41.8% vs 16.2%, Fisher's p=.010) but shorten §6.6 and move interpretation to Limitations.
+Recommended alternative: keep attrition statistic (41.8% vs 16.2%, Fisher's p=.010) but treat it as both a limitation and a substantive deployment signal.
 - Removing entirely leaves n=4 C1 game-arm completers unexplained
 - **Decision needed**: Shorten §6.6 vs. full removal
 
@@ -143,3 +143,21 @@ Run Jaccard resampling via `clusterboot()` (R) to complement ARI=1.000 result.
 - SE–ADAPTS coupling: r=.877 (game) vs. .532 (control), Fisher z p=.004
 
 **Attrition**: 41.8% game vs. 16.2% control, Fisher's exact p=.010, OR=0.28
+
+---
+
+## Notes on recent edits
+
+- `main.tex` now includes an LM--GM alignment table and a design-contrast table for the game vs. control conditions.
+- Reliability values in the measures table have been corrected to match the SQL-derived analysis set (`CL=.77`, `ENG=.88`, `TI=.85`).
+- The abstract, discussion, and conclusion now foreground the pre-registered continuous moderation analysis and treat cluster findings as exploratory illustration.
+- Practical recommendations have been recalibrated toward adaptive-sales training in professional-development contexts, with explicit organisational caveats.
+- The manuscript now compiles successfully to `main.pdf` (78 pages) under `pdflatex`; remaining issues are minor layout warnings rather than build failures.
+
+
+## 2026-05-29 revision note
+
+- `main.tex` now uses a dual-structure expertise story: pre-registered continuous moderation and baseline-only clustering answer "for whom", while a Chen-style within-game profile table explains what happened inside the game.
+- The abandoned cognitive-load item decomposition has been removed from the interpretive core. The manuscript now treats higher game-side cognitive load as a central result, while explicitly noting that the brief CL instrument cannot separate extraneous from germane load.
+- The theoretical framing now anchors the proposed Cognitive Load Budget Framework to Plass, Homer, and Kinzer's (2015) cognitive foundation of game-based learning, with LM--GM retained as the alignment framework.
+- `main.pdf` was rebuilt successfully with `pdflatex`; the current output is 72 pages with minor overfull-box warnings only.
