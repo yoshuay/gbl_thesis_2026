@@ -545,7 +545,7 @@ Channeling effect exploration & Cognitive load, self-efficacy, engagement, adapt
 
 The finalized analysis report treated the final completer sample as the primary analytic set ($N = 63$). For the two primary pre-post outcomes---sales self-efficacy (SE) and adaptive selling (ADAPTS)---between-group comparisons used ANCOVA with the respective pre-test score as a covariate, following CONSORT recommendations for RCTs that include baseline measurement. ANCOVA was preferred over gain-score $t$-tests because it does not impose the implicit constraint that the post-on-pre regression slope equals 1.0, and because partitioning pre-test variance from the error term increases statistical precision even when baseline groups are well-balanced. For the post-test only measures---cognitive load, engagement, and transfer intention---Welch's independent samples $t$-tests were used, as no pre-test baseline was available for these constructs. Within-group pre-post changes on self-efficacy and adaptive selling were tested using paired $t$-tests for descriptive completeness only and are not interpreted as causal evidence in isolation.
 
-Exploratory analyses---including correlation moderation via Fisher $z$ tests, $k$-means cluster-based expertise profiling ($k = 3$), Chen-style within-game profile translation, and bootstrapped mediation analysis within the game group---were conducted as theoretically motivated follow-ups to the primary hypotheses. These analyses were not pre-registered and are reported as exploratory throughout. Sensitivity checks excluded four participants with extreme completion times ($>$10{,}000 seconds, likely left the browser open); this produced an $n = 59$ sample whose results were consistent in direction and comparable in magnitude to the primary analysis.
+Exploratory analyses---including correlation moderation via Fisher $z$ tests, three-cluster readiness profiling with k-means, within-game profile translation using the combined behavioral-and-psychological table format of Chen et al.\ (2018), Tukey HSD pairwise contrasts within the game group, and bootstrapped mediation analysis within the game group---were conducted as theoretically motivated follow-ups to the primary hypotheses. For the within-game cluster follow-up, gain scores (post minus pre) were used for pre-post measures (SE change and ADAPTS gain), post-test scores were used as-is for post-only measures (cognitive load, engagement, transfer intention), and Tukey HSD post-hoc contrasts were computed on the game group only to identify which expertise-cluster pairs drove any omnibus differentiation. These analyses were not pre-registered and are reported as exploratory throughout. Sensitivity checks excluded four participants with extreme completion times (more than 10{,}000 seconds, likely left the browser open); this produced an $n = 59$ sample whose results were consistent in direction and comparable in magnitude to the primary analysis.
 
 \chapter{Results}
 
@@ -771,7 +771,7 @@ Behavioral logs reflect this design. All 31 analyzed control participants viewed
 \section{Expertise-Conditional Effects}
 \label{sec:expertise}
 
-The aggregate between-group comparisons in Section~\ref{sec:h1} obscure substantial heterogeneity across learner expertise levels. To keep the manuscript analytically disciplined, two layers are distinguished. The \textit{predictive} layer asks \textit{for whom} the game is likely to work and is anchored in pre-registered continuous moderation plus baseline-only clustering. The \textit{explanatory} layer then asks \textit{what happened inside the game} for those baseline-defined groups, using a Chen-style profiling table built from behavioral logs and post-test variables. The predictive layer carries the evidential weight; the explanatory layer makes the pattern easier to interpret.
+The aggregate between-group comparisons in Section~\ref{sec:h1} obscure substantial heterogeneity across learner expertise levels. To keep the manuscript analytically disciplined, two layers are distinguished. The \textit{predictive} layer asks \textit{for whom} the game is likely to work and is anchored in pre-registered continuous moderation plus baseline-only clustering. The \textit{explanatory} layer then asks \textit{what happened inside the game} for those baseline-defined groups, using a within-game profiling table built from behavioral logs and post-test variables. The predictive layer carries the evidential weight; the explanatory layer makes the pattern easier to interpret.
 
 \subsection*{Continuous Moderation Analysis (Primary)}
 
@@ -846,9 +846,11 @@ Novice learners in the game condition gained substantially less on adaptive sell
 
 These baseline clusters remain exploratory and should not be treated as confirmatory subgroups. Their role here is supportive: they translate the continuous moderation into an interpretable readiness profile and provide the bridge to the within-game explanatory layer below.
 
-\subsection*{Within-Game Profile Translation (Chen-Style Explanatory Layer)}
+Taken together, the aggregate and readiness-stratified results already suggest that the game and control conditions are not simply stronger or weaker versions of the same instructional pathway. The game imposed higher cognitive cost, and its comparative value depended strongly on learner readiness. The next analyses therefore do not ask again \textit{whether} the game worked on average; they ask \textit{how} the internal pattern of experience differed once learners were inside the game, and whether that helps explain why superficially similar completion of the mechanics led to different downstream value across readiness groups.
 
-To make the moderation result more tangible, the baseline clusters were then carried into a Chen-style descriptive analysis of the game arm only. This second layer does \textit{not} answer who should receive the game at entry; rather, it helps explain what happened inside the game once learners from different readiness strata were exposed to the same mechanics. Following Chen et al.\ (2018), behavioral logs and psychological outcomes are displayed together in a single ANOVA table. For readability, the three baseline clusters can be translated descriptively as a low-engagement novice profile (C1), a moderate intermediate profile (C2), and a highly engaged advanced profile (C3). These are explanatory labels derived from post-treatment patterns, not allocation categories.
+\subsection*{Within-Game Profile Translation}
+
+To make the moderation result more tangible, the baseline clusters were then carried into a descriptive analysis of the game arm only. This second layer does \textit{not} answer who should receive the game at entry; rather, it helps explain what happened inside the game once learners from different readiness strata were exposed to the same mechanics. Following Chen et al.\ (2018), behavioral logs and psychological outcomes are displayed together in a single ANOVA table. For readability, the three baseline clusters can be translated descriptively as a low-engagement novice profile (C1), a moderate intermediate profile (C2), and a highly engaged advanced profile (C3). These are explanatory labels derived from post-treatment patterns, not allocation categories.
 
 \begin{table}[htbp]
 \centering
@@ -886,7 +888,115 @@ Transfer Intention (1--5) & 3.08 (0.42) & 3.56 (0.59) & 4.31 (0.50) & 10.940*** 
 
 The within-game table reveals a useful dissociation. Objective gameplay metrics were remarkably similar across the three readiness clusters: the groups earned comparable tokens, won comparable proportions of encounters, and differed little on exact matches or failed attempts. What diverged was the psychological meaning of the experience. Engagement and transfer intention increased monotonically from C1 to C3, while self-efficacy gain showed a marginal omnibus trend. In other words, the same mechanics inventory could be traversed on roughly equal behavioral footing while still producing very different subjective and motivational trajectories.
 
-This is where the Chen-style labels help. Translating the table into plain language, C1 novices looked like a low-engagement trajectory, C2 like the default moderate trajectory, and C3 like the most engaged trajectory. Those labels are descriptive, not predictive. Their value is interpretive: they show how the predictive readiness model materialised in practice once learners were inside the game. What the game changed most was not raw in-game performance, but the quality of the experience attached to that performance.
+This is where the descriptive labels help. Translating the table into plain language, C1 novices looked like a low-engagement trajectory, C2 like the default moderate trajectory, and C3 like the most engaged trajectory. Those labels are descriptive, not predictive. Their value is interpretive: they show how the predictive readiness model materialised in practice once learners were inside the game. What the game changed most was not raw in-game performance, but the quality of the experience attached to that performance.
+
+To make the explanatory layer more explicit, Tukey HSD pairwise contrasts were then computed on the game group only. These contrasts do not alter the predictive answer about who should receive the game; they refine the explanatory picture by showing which readiness clusters differed once inside the shared game environment.
+
+\begin{table}[htbp]
+\centering
+\caption{Multiple Comparisons (Tukey HSD) --- Gain-score outcomes within the game group ($n$ = 32)}
+\label{tab:tukey-gain}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{L{2.4cm}L{2.4cm}C{2.0cm}C{1.7cm}C{1.2cm}C{1.7cm}C{1.7cm}}
+\toprule
+\textbf{(I) Cluster} & \textbf{(J) Cluster} & \textbf{Mean Diff (I$-$J)} & \textbf{Std.\ Error} & \textbf{Sig.} & \textbf{95\% CI Lower} & \textbf{95\% CI Upper} \\
+\midrule
+\multicolumn{7}{l}{\textit{Dependent variable: SE Gain ($\Delta$, 1--5 scale) \quad $F$(2,29) = 3.31, $p$ = .051$\dagger$, MSE = 0.194}} \\[2pt]
+C1 Novice
+  & C2 Intermediate &$+$0.5883 & 0.1751 & .061$\dagger$ & $-$0.0233 & \hphantom{$-$}1.2000 \\
+C1 Novice
+  & C3 Advanced & $+$0.6212 & 0.1779 & .050$\dagger$ & $-$0.0003 & \hphantom{$-$}1.2426 \\[2pt]
+C2 Intermediate
+  & C1 Novice   & $-$0.5883 & 0.1751 & .061$\dagger$ & $-$1.2000 & \hphantom{$-$}0.0233 \\
+C2 Intermediate
+  & C3 Advanced & $+$0.0328 & 0.1179 & .979 & $-$0.3790 & \hphantom{$-$}0.4447 \\[2pt]
+C3 Advanced
+  & C1 Novice   & $-$0.6212 & 0.1779 & .050$\dagger$ & $-$1.2426 & \hphantom{$-$}0.0003 \\
+C3 Advanced
+  & C2 Intermediate &$-$0.0328 & 0.1179 & .979 & $-$0.4447 & \hphantom{$-$}0.3790 \\
+\midrule
+\multicolumn{7}{l}{\textit{Dependent variable: ADAPTS Gain ($\Delta$\%, 0--100 scale) \quad $F$(2,29) = 1.24, $p$ = .303, MSE = 126.32 [ns]}} \\[2pt]
+C1 Novice
+  & C2 Intermediate &$-$0.8733 & 4.4722 & .990 & $-$16.4929 & \hphantom{$-$}14.7462 \\
+C1 Novice
+  & C3 Advanced & $+$5.6692 & 4.5440 & .656 & $-$10.2012 & \hphantom{$-$}21.5397 \\[2pt]
+C2 Intermediate
+  & C1 Novice   & $+$0.8733 & 4.4722 & .990 & $-$14.7462 & \hphantom{$-$}16.4929 \\
+C2 Intermediate
+  & C3 Advanced & $+$6.5426 & 3.0115 & .289 & $-$3.9753 & \hphantom{$-$}17.0605 \\[2pt]
+C3 Advanced
+  & C1 Novice   & $-$5.6692 & 4.5440 & .656 & $-$21.5397 & \hphantom{$-$}10.2012 \\
+C3 Advanced
+  & C2 Intermediate &$-$6.5426 & 3.0115 & .289 & $-$17.0605 & \hphantom{$-$}3.9753 \\
+\bottomrule
+\end{tabular}
+\normalsize
+\setlength{\tabcolsep}{6pt}
+\end{table}
+
+\noindent\textit{Note.} Based on observed means. $^*$The mean difference is significant at the .05 level. $\dagger p < .10$. 95\% CIs are simultaneous Tukey confidence intervals controlling familywise error ($\alpha$ = .05; $df_{error}$ = 29, $k$ = 3 groups). C1 novice $n$ = 4; interpret with caution.
+
+\begin{table}[htbp]
+\centering
+\caption{Multiple Comparisons (Tukey HSD) --- Post-test outcomes within the game group ($n$ = 32)}
+\label{tab:tukey-post}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{L{2.4cm}L{2.4cm}C{2.0cm}C{1.7cm}C{1.2cm}C{1.7cm}C{1.7cm}}
+\toprule
+\textbf{(I) Cluster} & \textbf{(J) Cluster} & \textbf{Mean Diff (I$-$J)} & \textbf{Std.\ Error} & \textbf{Sig.} & \textbf{95\% CI Lower} & \textbf{95\% CI Upper} \\
+\midrule
+\multicolumn{7}{l}{\textit{Dependent variable: Cognitive Load (1--7) \quad $F$(2,29) = 1.00, $p$ = .380, MSE = 0.686 [ns]}} \\[2pt]
+C1 Novice
+  & C2 Intermediate &$-$0.4875 & 0.3295 & .554 & $-$1.6381 & \hphantom{$-$}0.6631 \\
+C1 Novice
+  & C3 Advanced & $-$0.6683 & 0.3347 & .348 & $-$1.8374 & \hphantom{$-$}0.5009 \\[2pt]
+C2 Intermediate
+  & C1 Novice   & $+$0.4875 & 0.3295 & .554 & $-$0.6631 & \hphantom{$-$}1.6381 \\
+C2 Intermediate
+  & C3 Advanced & $-$0.1808 & 0.2218 & .834 & $-$0.9556 & \hphantom{$-$}0.5941 \\[2pt]
+C3 Advanced
+  & C1 Novice   & $+$0.6683 & 0.3347 & .348 & $-$0.5009 & \hphantom{$-$}1.8374 \\
+C3 Advanced
+  & C2 Intermediate &$+$0.1808 & 0.2218 & .834 & $-$0.5941 & \hphantom{$-$}0.9556 \\
+\midrule
+\multicolumn{7}{l}{\textit{Dependent variable: Engagement (1--5) \quad $F$(2,29) = 3.91, $p$ = .031*, MSE = 0.308}} \\[2pt]
+C1 Novice
+  & C2 Intermediate &$-$0.3128 & 0.2207 & .581 & $-$1.0837 & \hphantom{$-$}0.4581 \\
+C1 Novice
+  & C3 Advanced & $-$0.7683 & 0.2243 & .055$\dagger$ & $-$1.5516 & \hphantom{$-$}0.0150 \\[2pt]
+C2 Intermediate
+  & C1 Novice   & $+$0.3128 & 0.2207 & .581 & $-$0.4581 & \hphantom{$-$}1.0837 \\
+C2 Intermediate
+  & C3 Advanced & $-$0.4554 & 0.1486 & .094$\dagger$ & $-$0.9746 & \hphantom{$-$}0.0637 \\[2pt]
+C3 Advanced
+  & C1 Novice   & $+$0.7683 & 0.2243 & .055$\dagger$ & $-$0.0150 & \hphantom{$-$}1.5516 \\
+C3 Advanced
+  & C2 Intermediate &$+$0.4554 & 0.1486 & .094$\dagger$ & $-$0.0637 & \hphantom{$-$}0.9746 \\
+\midrule
+\multicolumn{7}{l}{\textit{Dependent variable: Transfer Intention (1--5) \quad $F$(2,29) = 10.94, $p < .001$, MSE = 0.287}} \\[2pt]
+C1 Novice
+  & C2 Intermediate &$-$0.4710 & 0.2133 & .278 & $-$1.2160 & \hphantom{$-$}0.2740 \\
+C1 Novice
+  & C3 Advanced & $-$1.2227$^*$ & 0.2167 & .001 & $-$1.9797 & $-$0.4657 \\[2pt]
+C2 Intermediate
+  & C1 Novice   & $+$0.4710 & 0.2133 & .278 & $-$0.2740 & \hphantom{$-$}1.2160 \\
+C2 Intermediate
+  & C3 Advanced & $-$0.7517$^*$ & 0.1436 & .003 & $-$1.2534 & $-$0.2500 \\[2pt]
+C3 Advanced
+  & C1 Novice   & $+$1.2227$^*$ & 0.2167 & .001 & \hphantom{$-$}0.4657 & \hphantom{$-$}1.9797 \\
+C3 Advanced
+  & C2 Intermediate &$+$0.7517$^*$ & 0.1436 & .003 & \hphantom{$-$}0.2500 & \hphantom{$-$}1.2534 \\
+\bottomrule
+\end{tabular}
+\normalsize
+\setlength{\tabcolsep}{6pt}
+\end{table}
+
+\noindent\textit{Note.} Based on observed means. $^*$The mean difference is significant at the .05 level. $\dagger p < .10$. 95\% CIs are simultaneous Tukey confidence intervals controlling familywise error ($\alpha$ = .05; $df_{error}$ = 29, $k$ = 3 groups). Omnibus ANOVA for ADAPTS gain and cognitive load were non-significant; Tukey contrasts are shown for completeness because this layer is explanatory rather than confirmatory. C1 novice $n$ = 4; interpret with caution.
+
+The Tukey HSD contrasts sharpen the explanatory picture. Transfer intention is the most robustly expertise-differentiated within-game outcome: advanced learners (C3) significantly exceeded both novices (C1; $\Delta$ = $+$1.22, $p$ = .001) and intermediate learners (C2; $\Delta$ = $+$0.75, $p$ = .003). Engagement shows the same ordering but with only marginal pairwise contrasts (C3 vs.\ C1: $p$ = .055$\dagger$; C3 vs.\ C2: $p$ = .094$\dagger$), consistent with the smaller omnibus effect and the very small C1 cell. For SE gain, no pairwise contrast crosses the .05 threshold despite the marginal omnibus trend, and neither ADAPTS gain nor cognitive load differentiates the three clusters within the game arm. In short, this explanatory layer is driven less by raw in-game performance than by how motivationally worthwhile the same game felt to different readiness groups.
 
 \optionalfigure{expertise_reversal_heatmap.png}{Effect sizes (Cohen's $d$, game vs.\ control) by outcome and expertise cluster. Red = control advantage; depth of colour reflects magnitude. The monotone reversal pattern on ADAPTS gain across low, intermediate, and high expertise clusters is consistent with expertise reversal theory.}{fig:expertise-reversal-heatmap}
 
@@ -895,7 +1005,9 @@ This is where the Chen-style labels help. Translating the table into plain langu
 \section{Summary of Findings}
 This thesis set out to test two linked propositions: first, whether a scaffolded digital game-based intervention would outperform a conventional digital training format in sales training; and second, whether the internal pattern of psychological outcomes inside the game condition would reflect the intended learning logic. Both hypotheses require a qualified answer.
 
-H1 was not supported at the aggregate level. ANCOVA revealed a marginal trend favouring the control group on self-efficacy ($F$(1,60) = 3.56, $p$ = .064$\dagger$, $\eta^2_p$ = .056), with no significant difference on adaptive selling performance. The game produced significantly higher cognitive load than the control ($d$ = 0.71) without corresponding gains in engagement or transfer intention. However, the pre-registered continuous moderation analysis showed that this aggregate comparison averages over a strong readiness gradient: the game was associated with poorer outcomes at low pre-intervention expertise and increasingly competitive outcomes as pre-intervention expertise increased. The exploratory baseline cluster analysis then translated that gradient into concrete learner strata, while the Chen-style within-game table showed how those strata experienced the same game differently once inside it. The core story is therefore not that the game failed unconditionally, but that its effectiveness appears contingent on learner readiness.
+H1 was not supported at the aggregate level. ANCOVA revealed a marginal trend favouring the control group on self-efficacy ($F$(1,60) = 3.56, $p$ = .064$\dagger$, $\eta^2_p$ = .056), with no significant difference on adaptive selling performance. The game produced significantly higher cognitive load than the control ($d$ = 0.71) without corresponding gains in engagement or transfer intention. However, the pre-registered continuous moderation analysis showed that this aggregate comparison averages over a strong readiness gradient: the game was associated with poorer outcomes at low pre-intervention expertise and increasingly competitive outcomes as pre-intervention expertise increased. The exploratory baseline cluster analysis then translated that gradient into concrete learner strata, while the within-game profiling table showed how those strata experienced the same game differently once inside it. The core story is therefore not that the game failed unconditionally, but that its effectiveness appears contingent on learner readiness.
+
+This matters for interpretation because the pattern points to a difference in pathway, not merely a difference in average magnitude. The control condition appears to preserve a more conventional alignment between accessible instruction, confidence gain, and outcome improvement, particularly for novices. The game condition, by contrast, adds cognitive cost and makes readiness more consequential: advanced learners show the strongest transfer-oriented profile, whereas novice learners can traverse broadly similar mechanics without converting that experience into comparable downstream value. The mediation and correlation analyses below are therefore introduced not as isolated follow-ups, but as tests of whether the game reorganized the psychological pathway through which learning value was produced.
 
 H2 received partial support. Within the game group, self-efficacy, engagement, transfer intention, and adaptive selling formed a tightly coherent positive network, corroborated by the finding that self-efficacy fully mediated engagement effects on adaptive selling (indirect effect = 1.10, 95\% CI [.43, 2.24]). Cognitive load did not show the expected negative association with other outcomes, suggesting that subjective load captured a more complicated experience than a simple overload story. Fisher $z$ moderation tests further showed that the game significantly tightened the self-efficacy--ADAPTS coupling ($r$ = .877 vs.\ .532, $p$ = .004), indicating that the game restructured the psychological architecture of learning even when aggregate means were not superior.
 
@@ -916,11 +1028,11 @@ Critically, mediation analysis showed that self-efficacy \textit{fully} mediated
 The absence of a meaningful relationship between cognitive load and motivational outcomes (CL $\leftrightarrow$ SE $r$ = .043; CL $\leftrightarrow$ ENG $r$ = .236, both ns) suggests that subjective load captured a complicated experience rather than straightforward overload. Some learners appear to have experienced the game as effortful but worthwhile, whereas others encountered difficulty without a corresponding gain in confidence. The analyzed game sample, after substantial attrition, was also restricted to more persistent participants, which would attenuate observable load--motivation relationships. The between-group result nonetheless stands: the game imposed greater perceived cognitive cost without producing superior aggregate outcomes.
 
 \section{Predictive Readiness and Explanatory Profiles}
-The manuscript now distinguishes two legitimate but non-equivalent uses of clustering. The predictive question --- \textit{for whom should the game be deployed?} --- is answered by baseline readiness and continuous moderation. That is the stronger claim because it uses variables available before the intervention. The explanatory question --- \textit{what kind of trajectory did different learners experience once inside the game?} --- is answered by the Chen-style within-game table, which translates the statistical pattern into a more tangible narrative of low-engagement novice, moderate intermediate, and highly engaged advanced tendencies.
+The manuscript now distinguishes two legitimate but non-equivalent uses of clustering. The predictive question --- \textit{for whom should the game be deployed?} --- is answered by baseline readiness and continuous moderation. That is the stronger claim because it uses variables available before the intervention. The explanatory question --- \textit{what kind of trajectory did different learners experience once inside the game?} --- is answered by the within-game profiling table, which translates the statistical pattern into a more tangible narrative of low-engagement novice, moderate intermediate, and highly engaged advanced tendencies.
 
 This separation matters methodologically. Post-treatment profile labels are useful for explanation, but they cannot substitute for a predictive allocation rule. The game does not work for learners because they are already ``highly engaged''; rather, higher-readiness learners are the ones most likely to experience the game as engaging and worth transferring. Keeping the predictive and descriptive layers separate avoids circularity while preserving interpretive richness.
 
-The dual-structure analysis also clarifies the role of telemetry. Behavioral logs are not used here as a stand-alone proxy for learning. Instead, they serve as explanatory evidence about how the same mechanics were traversed by learners with different readiness profiles. In that sense, the Chen-style table is not replacing the predictive model; it is making the predictive model readable.
+The dual-structure analysis also clarifies the role of telemetry. Behavioral logs are not used here as a stand-alone proxy for learning. Instead, they serve as explanatory evidence about how the same mechanics were traversed by learners with different readiness profiles. In that sense, the within-game profiling table is not replacing the predictive model; it is making the predictive model readable.
 
 \section{The Cognitive Load Budget Framework}
 The broader theoretical contribution is best understood by placing LM--GM and the present results inside Plass, Homer and Kinzer's (2015) foundations of game-based learning. LM--GM remains the design-mapping framework: it helps specify which mechanics serve which learning functions. Plass et al. provide the wider anchor by distinguishing cognitive, motivational, affective, and sociocultural foundations. The present study contributes most directly to the \textit{cognitive} foundation by proposing a more operational way to think about the cost side of mechanics.
@@ -988,7 +1100,7 @@ Longer-term follow-up is needed to determine whether the expertise-conditional p
 \chapter{Conclusion}
 This thesis evaluated a scaffolded digital game-based intervention for adaptive sales training in a professional-development context against a conventional digital module in an online randomised controlled trial. At the aggregate level, the game did not produce superior outcomes on self-efficacy or adaptive selling performance, and it imposed substantially higher cognitive load than the control ($d$ = 0.71). Read at that level alone, the trial is a null-to-negative result. Read through the pre-registered moderation analysis, however, a more useful pattern emerges: the game was associated with worse outcomes for low-readiness learners and increasingly competitive outcomes as readiness increased.
 
-That predictive readiness pattern is the thesis's main answer to the question \textit{for whom does game-based sales training work?} The answer is not ``for the highly engaged'' in any predictive sense, because engagement is visible only after learners have entered the game. Rather, the game works most plausibly for learners who arrive with enough prior schema to absorb the mechanics inventory without exhausting the working memory needed for domain learning. The baseline clusters and the Chen-style within-game profiling table then make that result readable: novices tended to experience the same mechanics as a lower-value trajectory, while advanced learners were more likely to experience them as engaging and transferable.
+That predictive readiness pattern is the thesis's main answer to the question \textit{for whom does game-based sales training work?} The answer is not ``for the highly engaged'' in any predictive sense, because engagement is visible only after learners have entered the game. Rather, the game works most plausibly for learners who arrive with enough prior schema to absorb the mechanics inventory without exhausting the working memory needed for domain learning. The baseline clusters and the within-game profiling table then make that result readable: novices tended to experience the same mechanics as a lower-value trajectory, while advanced learners were more likely to experience them as engaging and transferable.
 
 The clearest empirical signal enabling this interpretation is the cognitive-load gap. Because the game and control conditions were intentionally matched on sales content, the higher perceived load in the game condition is most plausibly attributable to the additional mechanics layer rather than to higher intrinsic content complexity. The present instrument does not allow a clean empirical separation of extraneous and germane load, so that subtype claim remains open. What the data do show robustly is that the cognitive-cost side of game design matters, and that it interacts with learner readiness rather than averaging out harmlessly.
 
